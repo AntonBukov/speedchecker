@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.5.0//EN"
+        "http://google-web-toolkit.googlecode.com/svn/tags/2.5.0/distro-source/core/src/gwt-module.dtd">
+<module rename-to='speedchecker'>
+    <!-- Inherit the core Web Toolkit stuff.                        -->
+    <inherits name='com.google.gwt.user.User'/>
+
+    <!-- Inherit the default GWT style sheet.  You can change       -->
+    <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+
+    <!-- Other module inherits                                      -->
+    <inherits name='com.gwtplatform.dispatch.Dispatch'/>
+    <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
+    
+    <!-- Specify the paths for translatable code                    -->
+    <source path='client'/>
+    <source path='shared'/>
+
+    <set-configuration-property name="gin.ginjector.modules"
+            value="com.adamantium.speedchecker.client.gin.ClientModule"/>
+</module>
